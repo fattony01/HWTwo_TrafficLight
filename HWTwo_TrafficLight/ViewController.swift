@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         yellowLight.layer.cornerRadius = 70
         greenLight.alpha = 0.3
         greenLight.layer.cornerRadius = 70
+        switchButton.layer.cornerRadius = 10
     }
     
     @IBAction func switchButtonDidTapped(_ sender: UIButton) {
