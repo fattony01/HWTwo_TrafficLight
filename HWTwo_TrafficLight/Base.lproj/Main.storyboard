@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="NtW-zv-qHP">
-                                <rect key="frame" x="137" y="86" width="140" height="500"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="NtW-zv-qHP">
+                                <rect key="frame" x="137" y="86" width="140" height="480"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lv6-ZF-QjH">
                                         <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
@@ -28,7 +28,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q94-FO-owI">
-                                        <rect key="frame" x="0.0" y="180" width="140" height="140"/>
+                                        <rect key="frame" x="0.0" y="170" width="140" height="140"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="140" id="GXm-69-Lag"/>
@@ -36,7 +36,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKp-TD-fou">
-                                        <rect key="frame" x="0.0" y="360" width="140" height="140"/>
+                                        <rect key="frame" x="0.0" y="340" width="140" height="140"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="140" id="cgf-fQ-NuJ"/>
@@ -49,15 +49,17 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjd-eR-ysf">
-                                <rect key="frame" x="137" y="745" width="140" height="77"/>
+                                <rect key="frame" x="137" y="752" width="140" height="70"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="2mo-rb-2z8"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="JFK-mf-Lfh"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" cornerStyle="large" titleAlignment="center">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Button">
+                                        <fragment content="START">
                                             <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <font key="NSFont" size="36" name="Monaco"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
@@ -74,7 +76,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kjd-eR-ysf" firstAttribute="top" secondItem="NtW-zv-qHP" secondAttribute="bottom" constant="159" id="0O3-h4-XUi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kjd-eR-ysf" secondAttribute="bottom" constant="40" id="GbY-Hr-Mcp"/>
                             <constraint firstItem="kjd-eR-ysf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d90-Rr-j3U"/>
                             <constraint firstItem="NtW-zv-qHP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jfD-wf-Y7D"/>
