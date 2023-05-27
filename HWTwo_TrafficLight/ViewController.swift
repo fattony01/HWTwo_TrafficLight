@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet var yellowLight: UIView!
     @IBOutlet var greenLight: UIView!
     
+    @IBOutlet var switchButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         redLight.alpha = 0.3
@@ -23,7 +25,9 @@ class ViewController: UIViewController {
         greenLight.layer.cornerRadius = 70
     }
 
-    @IBAction func button(_ sender: UIButton) {
+    @IBAction func switchButtonDidTapped(_ sender: UIButton) {
+        redLight.alpha = 1
+        switchButton.setTitle("NEXT", for: .normal)
     }
     
 }

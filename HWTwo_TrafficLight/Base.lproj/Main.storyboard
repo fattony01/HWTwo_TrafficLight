@@ -48,7 +48,7 @@
                                     <constraint firstAttribute="width" constant="140" id="d5R-Xn-PgU"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjd-eR-ysf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kjd-eR-ysf">
                                 <rect key="frame" x="137" y="752" width="140" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="2mo-rb-2z8"/>
@@ -69,7 +69,7 @@
                                     <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TDj-Jg-4Ld"/>
+                                    <action selector="switchButtonDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fyr-oA-dpP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -85,6 +85,7 @@
                     <connections>
                         <outlet property="greenLight" destination="EKp-TD-fou" id="ZUd-FI-Pz0"/>
                         <outlet property="redLight" destination="Lv6-ZF-QjH" id="duf-ip-cCF"/>
+                        <outlet property="switchButton" destination="kjd-eR-ysf" id="AxE-0v-vGK"/>
                         <outlet property="yellowLight" destination="q94-FO-owI" id="oLn-Iw-8L3"/>
                     </connections>
                 </viewController>
